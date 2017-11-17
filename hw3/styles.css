@@ -1,0 +1,580 @@
+body {
+    background-color: #d9edf7;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 5px 10px 30px rgba(0,0,0,0.5);
+}
+a {
+    font-size: 2em;
+    margin-left: 640px;
+}
+li {
+    list-style: none;
+}
+.table_flag {
+    margin-top: 0;
+    margin-left: 70px;
+    border-spacing: 30px;
+}
+td {
+    margin-right: 10px;
+    width: 250px;
+    height:180px;
+    padding-left: 0;
+    padding-right:0;
+}
+.flag_setting:hover h2 {
+    display: inline;
+}
+h2 {
+    position: absolute;
+    top: -60px;
+    font-style: italic;
+    color: #4e41bf;
+    text-shadow: 10px 5px 25px rgba(0,0,0,0.5);
+    display: none;
+}
+.flag-setting{
+    height: 150px;
+    width: 250px;
+}
+th {
+    width: 500px;
+}
+.flag_czechia {
+    position: relative;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+    margin: 5px;
+    width: 250px;
+    height:150px;
+}
+.flag_czechia_topcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 250px;
+    background-color: #fff;
+    z-index: 1;
+}
+.flag_czechia_bottomcolor {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    height: 75px;
+    width: 250px;
+    background-color: #D7141A;
+    z-index: 2;
+}
+.flag_czechia_sidecolor {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top:75px solid transparent;
+    border-left: 125px solid #11457E;
+    border-bottom: 75px solid transparent;
+    z-index: 3;
+}
+.flag_russia {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+}
+.flag_russia_bottomcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #fff;
+}
+.flag_russia_topcolor {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #0000FF;
+}
+.flag_russia_centercolor {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #FF0000;
+}
+.flag_finland {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+}
+.flag_finland_backgroundcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 250px;
+    background-color: #fff;
+}
+.flag_finland_cross {
+    background: #023781;
+    height: 150px; width: 30px;
+    position: relative; left: 60px;
+}
+.flag_finland_cross:after {
+    content: "";
+    height: 30px; width: 250px;
+    background: #023781;
+    position: absolute; left: -60px; top: 60px;
+}
+
+.flag_switz {
+    position: relative;
+    margin: 5px;
+    width: 150px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+}
+.flag_switz_backgroundcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    background-color: #ff3524;
+}
+.flag_switz_cross {
+    background: white;
+    height: 90px;
+    position: relative;
+    left: 60px; top:30px;
+    width: 30px;
+}
+.flag_switz_cross:after {
+    background: white;
+    content: "";
+    height: 30px;
+    left: -30px;
+    position: absolute;
+    top: 30px;
+    width: 90px;
+}
+
+.flag_benin {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+}
+.flag_benin_sidecolor{
+    position:absolute;
+    top: 0;
+    left:0;
+    background-color: #038654;
+    width: 100px;
+    height: 150px;
+}
+.flag_benin_topcolor {
+    position:absolute;
+    top: 0;
+    left:100px;
+    background-color: #fdd214;
+    height: 75px;
+    width: 150px;
+}
+.flag_benin_bottomcolor {
+    position:absolute;
+    top: 75px;
+    left: 100px;
+    background-color: #ed132c;
+    height: 75px;
+    width: 150px;
+}
+
+.flag_sejsh {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+    background-color: #d62828;
+}
+.flag_sejsh_leftcolor_ins_triangl {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 150px solid #fcd856;
+    border-right: 167px solid transparent;
+    z-index: 1;
+}
+.flag_sejsh_leftcolor_out_triangl {
+     position: absolute;
+     top: 0;
+     width: 0;
+     height: 0;
+     border-top: 150px solid #003f87;
+     border-right: 83px solid transparent;
+     z-index: 2;
+ }
+.flag_sejsh_bottomcolor_ins_triangl {
+    position: absolute;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #ffffff;
+    border-left: 250px solid transparent;
+    z-index: 1;
+}
+.flag_sejsh_bottomcolor_out_triangl {
+    position: absolute;
+    top: 100px;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #007a3d;
+    border-left: 250px solid transparent;
+    z-index: 2;
+}
+
+.flag_chad {
+    margin:5px;
+    position: relative;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+    width: 250px;
+    height: 150px;
+}
+.chad_leftcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #002664;
+    width: 83px;
+    height: 150px;
+}
+.chad_centercolor {
+    position: absolute;
+    top: 0;
+    left: 83px;
+    background-color: #fecb00;
+    width: 83px;
+    height: 150px;
+}
+.chad_rightcolor {
+    position: absolute;
+    top: 0;
+    left: 166px;
+    background-color: #c60c30;
+    width: 84px;
+    height: 150px;
+}
+
+.flag_gana {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+}
+.gana_topcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #ce1126;
+}
+.gana_mediumcolor {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #fcd116;
+}
+.gana_bottomcolor {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 50px;
+    width: 250px;
+    background-color: #006b3f;
+}
+.gana_ins_star_position {
+    position: absolute;
+    top: 190px;
+    left: 350px;
+    zoom: 28%;
+    z-index: 2;
+}
+.gana_star_parts {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: #000000;
+    width: 0;
+    height: 0;
+    border-right:  100px solid transparent;
+    border-bottom: 70px  solid #000000;
+    border-left:   100px solid transparent;
+    -moz-transform:    rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform:     rotate(35deg);
+    -o-transform:      rotate(35deg);
+}
+.gana_star_parts:before {
+    border-bottom: 80px solid #000000;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform:    rotate(-35deg);
+    -ms-transform:     rotate(-35deg);
+    -o-transform:      rotate(-35deg);
+
+}
+.gana_star_parts:after {
+    position: absolute;
+    display: block;
+    color: #000000;
+    top: 3px;
+    left: -105px;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #000000;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform:    rotate(-70deg);
+    -ms-transform:     rotate(-70deg);
+    -o-transform:      rotate(-70deg);
+    content: '';
+}
+
+.flag_gajana {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+    background-color: #009e49;
+}
+.flag_gajana_inscolor3_triangl{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top:75px solid transparent;
+    border-left: 250px solid #ffffff;
+    border-bottom: 75px solid transparent;
+    z-index: 1;
+}
+.flag_gajana_inscolor2_triangl{
+    position: absolute;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-top:68px solid transparent;
+    border-left: 230px solid #fcd116;
+    border-bottom: 68px solid transparent;
+    z-index: 2;
+}
+.flag_gajana_inscolor1_triang1{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top:75px solid transparent;
+    border-left: 125px solid #000000;
+    border-bottom: 75px solid transparent;
+    z-index: 3;
+}
+.flag_gajana_color_triangl{
+    position: absolute;
+    top: 9px;
+    width: 0;
+    height: 0;
+    border-top:66px solid transparent;
+    border-left: 110px solid #ce1126;
+    border-bottom: 66px solid transparent;
+    z-index: 4;
+}
+
+.flag_GB  {
+    position: relative;
+    margin: 5px;
+    width: 250px;
+    height:150px;
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+    background-color: #ff0000;
+}
+.GB_cross_out{
+    background: #ff0000;
+    height: 150px;
+    position: relative;
+    left: 110px;
+    top:0;
+    width: 30px;
+    z-index: 4;
+}
+.GB_cross_out:after{
+    background: #ff0000;
+    content: "";
+    height: 30px;
+    left: -110px;
+    position: absolute;
+    top: 60px;
+    width: 250px;
+}
+.GB_cross_ins{
+    background: #ffffff;
+    height: 150px;
+    position: absolute;
+    left: 102px;
+    top:0;
+    width: 46px;
+    z-index: 3;
+}
+.GB_cross_ins:after{
+    background: #ffffff;
+    content: "";
+    height: 46px;
+    left: -102px;
+    position: absolute;
+    top: 52px;
+    width: 250px;
+}
+.flag_GB_color_lefttriangl1{
+    position: absolute;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-bottom: 69px solid transparent;
+    border-left: 112px solid #ffffff;
+    border-top:69px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_lefttriangl2{
+    position: absolute;
+    top: 19px;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid transparent;
+    border-left: 91px solid #000080;
+    border-top:55px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_toptriang11{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 115px solid transparent;
+    border-top: 72px solid #ffffff;
+    border-left:115px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_toptriangl2{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-right: 95px solid transparent;
+    border-top: 58px solid #000080;
+    border-left:95px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_bottomtriangl1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-right: 114px solid transparent;
+    border-bottom: 68px solid #ffffff;
+    border-left:113px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_bottomtriangl2{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-right: 95px solid transparent;
+    border-bottom: 58px solid #000080;
+    border-left:95px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_righttriangl1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 69px solid transparent;
+    border-right: 112px solid #ffffff;
+    border-top:69px solid transparent;
+    z-index: 1;
+}
+.flag_GB_color_righttriangl2{
+    position: absolute;
+    top: 21px;
+    right:0;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid transparent;
+    border-right: 91px solid #000080;
+    border-top:55px solid transparent;
+    z-index: 1;
+}
+.flag_Greece {
+    background: repeating-linear-gradient(#0d5eaf 0px,#0d5eaf 17px, #ffffff 17px, #ffffff 34px);
+    box-shadow: 15px 10px 25px rgba(0,0,0,0.5);
+    height: 150px;
+    width: 250px;
+    margin: 5px;
+    position: relative;
+}
+.flag_Greece_backgroundcolor {
+    background-color: #0d5eaf;
+    height: 84.5px;
+    width: 84px;
+    top: 0;
+    left: 0;
+}
+
+.flag_Greece_cross {
+    background: #ffffff;
+    height: 84.5px;
+    position: relative;
+    left: 34px;
+    top:0;
+    width: 17px;
+    z-index: 4;
+}
+.flag_Greece_cross:after {
+    background: #ffffff;
+    content: "";
+    height: 17px;
+    left: -34px;
+    position: absolute;
+    top: 34px;
+    width: 84px;
+}
